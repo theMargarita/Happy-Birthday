@@ -3,66 +3,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Happy Birthday</title>
-    <link rel="stylesheet" href="header.css" />
-    <link rel="stylesheet" href="present.css" />
-    <link rel="stylesheet" href="robot.css" />
+    <link rel="stylesheet" href="CSS/header.css" />
+    <link rel="stylesheet" href="CSS/present.css" />
+    <link rel="stylesheet" href="CSS/robot.css" />
+    <link rel="stylesheet" href="CSS/balloons.css">
   </head>
   <body>
     <header>
-      <img src="fibie höger.png" class="fibie-right" />
+      <img src="images.img/fibie höger.png" class="fibie-right" />
       <h1>Welcome Herman</h1>
-      <img src="fibie vänster.png" class="fibie-left" />
+      <img src="images.img/fibie vänster.png" class="fibie-left" />
 
       <!-- <img src="Black Cat Hello Sticker.gif"> -->
     </header>
-    <!-- ROBOT -->
-    <div class="container">
-      <div class="card">
-        <div class="robo-card">
-          </label>
-          <div class="head">
-            <div class="face">
-              <div class="eye1"></div>
-              <div class="eye2"></div>
-            </div>
-          </div>
+<!-- BALLOONS -->
 
-          <div class="arms-wrapper">
-            <div class="left"></div>
-            <div class="body"></div>
-            <div class="right"></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- POPUP PRESENT -->
-      <div class="birth-card">
-        <div class="popup" id="present-popup">
-          <div class="present">
-            <div class="lid">
-              <span></span>
-              <!-- inside the lid -->
-            </div>
-            <div class="box">
-              <div class="something">
-                <h2>
-                  Happy Birthday Herman, <br />
-                  Hope you get a wonderful day
-                  <br />
-                  <3
-                </h2>
-              </div>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-          <button class="close-btn">X</button>
-        </div>
-        <img src="Black Cat Hello Sticker.gif" class="cat" />
-        <button class="open-btn">Open</button>
+<!-- ROBOT -->
+<div class="container">
+  <div class="card">
+    <div class="robo-card">
+    </label>
+    <div class="head">
+      <div class="face">
+        <div class="eye1"></div>
+        <div class="eye2"></div>
       </div>
     </div>
-    <script src="index.js"></script>
+    
+    <div class="arms-wrapper">
+      <div class="left"></div>
+      <div class="body"></div>
+      <div class="right"></div>
+    </div>
+  </div>
+</div>
+
+<!-- POPUP PRESENT -->
+<div class="birth-card">
+  <div class="popup" id="present-popup">
+    <div class="present">
+      <div class="lid">
+        <span></span>
+        <!-- inside the lid -->
+      </div>
+      <div class="box">
+        <div class="something">
+          <h2>
+            Happy Birthday Herman, <br />
+            Hope you get a wonderful day
+            <br />
+            <3
+          </h2>
+        </div>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <button class="close-btn">X</button>
+  </div>
+  <img src="images.img/Black Cat Hello Sticker.gif" class="cat" />
+  <button class="open-btn">Open</button>
+</div>
+</div>
+<div class="balloons-container"></div>
+    <script src="JavaScript/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="JavaScript/balloon.js"></script>
   </body>
 </html>
