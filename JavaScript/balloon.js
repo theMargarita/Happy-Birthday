@@ -5,9 +5,9 @@ function random(num) {
 }
 
 function getRandomStyles() {
-  var r = random(255);
-  var g = random(255);
-  var b = random(255);
+  var r = random(275);
+  var g = random(275);
+  var b = random(275);
   var ml = random(50);
   var mt = random(200);
   var left = random(100);
@@ -25,21 +25,30 @@ function createBalloons(num) {
     var balloon = document.createElement("div");
     balloon.classList.add("balloon");
     balloon.style = getRandomStyles();
+
+    // restets styles when animation loops 
+    balloon.addEventListener("animationiteration", () => {
+        balloon.style.animation = "none";
+  void balloon.offsetWidth; // force reflow
+  balloon.style = getRandomStyles();
+    });
+
+// pop effect on click 
+    balloon.addEventListener("click", () => {
+      balloon.style.transition = "transform 0.2s ease, opacity 0.2s ease";
+      balloon.style.transform = "scale(1)";
+      balloon.style.opacity = "0";
+      
+      // setTimeout(() => {
+      //   balloon.remove();
+      // }, 200);
+    })
+
     ballonCointainer.append(balloon);
   }
 }
 
-function removeBalloons() {
-  ballonCointainer.style.opacity = 0;
-  setTimeout(() => {
-    ballonCointainer.remove();
-  }, 500);
-}
-
 window.addEventListener("load", () => {
-  createBalloons(30);
+  createBalloons(200);
 });
 
-window.addEventListener("click", () => {
-  removeBalloons();
-});
