@@ -1,6 +1,6 @@
 body {
-  background: rgb(213, 221, 239);
-  padding-top: 50px;
+  background: rgb(243, 233, 176);
+  padding-top: 90px;
 display: flex;
 flex-direction: column;
   overflow-x: hidden;
@@ -8,9 +8,9 @@ flex-direction: column;
 }
 
 .line{
-  margin-top: 10px;
-  background-color: darkgray;
-  padding: 10px;
+  margin-top: 6px;
+  background-color: rgb(160, 194, 147);
+  padding: 23px;
 }
 
 header {
@@ -19,12 +19,12 @@ header {
   text-align: center;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 2rem;
   position: relative;
-  background-color: rgb(216, 238, 250);
+  background-color: rgb(210, 245, 181);
   font-variant: small-caps;
   overflow: hidden;
-  margin: -30px;
+  margin: -40px;
   margin-top: -110px;
 }
 
@@ -35,31 +35,14 @@ header {
 }
 
 .fibie-right {
-  width: 30vw;
+  width: 40vw;
   max-width: 300px;
   height: auto;
 }
 
 .fibie-left {
-  width: 30vw;
+  width: 40vw;
   max-width: 300px;
   height: auto;
 }
 
-#home a, li{
-  display: flex;
-  padding: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  /* box-shadow: black; */
-  cursor: pointer;
-}
-
-a:link, a:visited{
-    background-color:azure;
-    color: rgb(0, 0, 0);
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 30px;
-}

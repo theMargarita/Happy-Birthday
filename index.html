@@ -4,95 +4,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Happy Birthday</title>
     <link rel="stylesheet" href="CSS/header.css" />
-    <link rel="stylesheet" href="CSS/balloons.css">
+    <link rel="stylesheet" href="CSS/balloons.css" />
     <link rel="stylesheet" href="CSS/present.css" />
-    <link rel="stylesheet" href="CSS/robot.css" />
-    <link rel="stylesheet" href="CSS/robot2.css">
+    <link rel="stylesheet" href="CSS/talkBubble.css" />
+    <!-- <link rel="stylesheet" href="CSS/robot.css" /> -->
+    <link rel="stylesheet" href="CSS/robot2.css" />
   </head>
   <body>
     <header>
       <img src="images/fibie höger.png" class="fibie-right" />
-      <h1>Welcome Herman</h1>
+      <h1>
+        Happy Birthday Herman, <br />
+        hope you get a wonderful day <br />
+      </h1>
       <img src="images/fibie vänster.png" class="fibie-left" />
-      
     </header>
     <header class="line"></header>
-    <!-- ROBOT -->
+    <!-- CONTAINER -->
     <div class="container">
+      <div class="talk-bubble">
+        <div class="talktext">
+          <p>
+            <a href="game.html" id="home">Wanna play a game? </a>
+          </p>
+        </div>
+      </div>
+
+      <!-- ROBOT -->
       <div class="card">
         <div class="robo-card">
-        </label>
-        <div class="head">
-      <div class="face">
-        <div class="eye1"></div>
-        <div class="eye2"></div>
-      </div>
-    </div>
-    
-    <div class="arms-wrapper">
-      <div class="left"></div>
-      <div class="body"></div>
-      <div class="right"></div>
-    </div>
-  </div>
-</div>
+          <!-- </label> -->
+          <div class="head">
+            <div class="face">
+              <div class="eye1"></div>
+              <div class="eye2"></div>
+            </div>
+          </div>
 
-<!-- <div class="balloons-container"></div> -->
-<!-- POPUP PRESENT -->
-<div class="birth-card">
-  <div class="popup" id="present-popup">
-    <div class="present">
-      <div class="lid">
-        <span></span>
-        <!-- inside the lid -->
-      </div>
-      <div class="box">
-        <div class="something">
-          <h2>
-            Happy Birthday Herman, <br />
-            Hope you get a wonderful day
-            <br/>
-            <3
-          </h2>
+          <div class="arms-wrapper">
+            <div class="left"></div>
+            <div class="body"></div>
+            <div class="right"></div>
+          </div>
         </div>
-        <span></span>
-        <span></span>
       </div>
     </div>
-    <button class="close-btn">X</button>
-  </div>
-  <img src="images/Black Cat Hello Sticker.gif" class="cat" />
-  <button class="open-btn">Open</button>
-</div>
-<img src="images/Black Cat Hello Sticker.gif">
+    <div class="balloons-container"></div>
 
-<!-- ROBOT 2 -->
-<!-- <div class="container"> -->
-  <div class="card">
-    <div class="robo-card">
-    </label>
-    <div class="head">
-  <div class="face">
-    <div class="eye1"></div>
-    <div class="eye2"></div>
-  </div>
-</div>
 
-<div class="arms-wrapper">
-  <div class="left"></div>
-  <div class="body"></div>
-  <div class="right"></div>
-</div>
-</div>
-</div>
-</div>
-<!--  -->
-<li>
-  <a href="game.html" id="home">Wanna play a game? </a>
-</li>
-<script src="JavaScript/index.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
-<script src="JavaScript/balloon.js"></script>
-<script src="JavaScript/game.js"></script>
-</body>
+    <script src="JavaScript/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="JavaScript/balloon.js"></script>
+    <script src="JavaScript/game.js"></script>
+  </body>
 </html>
